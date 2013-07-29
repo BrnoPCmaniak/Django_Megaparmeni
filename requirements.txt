@@ -10,3 +10,5 @@ oauth2
 py-oauth2
 python-openid
 django-social-auth
+django-mailer
+Whoosh

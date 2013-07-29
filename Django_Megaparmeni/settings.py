@@ -126,6 +126,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'social_auth',
     'djangobb_forum',
+    'haystack',
 )
 
 AUTHENTICATION_BACKENDS = (
@@ -180,3 +181,17 @@ LOGGING = {
         },
     }
 }
+
+
+import os
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+    },
+}
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+)
