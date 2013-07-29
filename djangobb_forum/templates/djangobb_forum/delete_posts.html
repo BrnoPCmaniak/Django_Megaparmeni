@@ -9,7 +9,7 @@
 	<div class="inbox">
 		<div class="pagelink conl">{% paginate %}</div>
 				<ul><li><a href="{% url 'index' %}">{% trans "Root" %} </a></li><li>&raquo; {% link topic.forum %} </li><li>&raquo; {{ topic }} 
-				<a href="{% url 'forum_topic_feed' topic.id %}"><img src="{{ STATIC_URL }}djangobb_forum/img/feed-icon-small.png" alt="[RSS Feed]" title="[RSS Feed]" style="vertical-align:middle;" /></a>
+				<a href="{% url 'forum_topic_feed' topic.id %}"><img src="{% static "djangobb_forum/img/feed-icon-small.png" }" alt="[RSS Feed]" title="[RSS Feed]" style="vertical-align:middle;" /></a>
 				</li></ul>
 		<div class="clearer"></div>
 	</div>

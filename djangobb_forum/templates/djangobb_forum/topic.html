@@ -12,7 +12,7 @@
 		<ul>
 			<li>
 			<a href="{% url 'index' %}">{% trans "Root" %} </a></li><li>&raquo; {% link topic.forum %} </li><li>&raquo; {{ topic.name }}
-			<a href="{% url 'forum_topic_feed' topic.id %}"><img src="{{ STATIC_URL }}djangobb_forum/img/feed-icon-small.png" alt="[RSS Feed]" title="[RSS Feed]" class="breadcrumb_rss" /></a>
+			<a href="{% url 'forum_topic_feed' topic.id %}"><img src="{% static "djangobb_forum/img/feed-icon-small.png" %}" alt="[RSS Feed]" title="[RSS Feed]" class="breadcrumb_rss" /></a>
 			</li>
 		</ul>
 		<div class="clearer"></div>
@@ -90,7 +90,7 @@
 						{% if forum_settings.REPUTATION_SUPPORT %}
 								<dd><a href="{% url 'reputation' post.user.username %}">{% trans "Reputation" %}</a>:
 								{% if request.user != post.user %} {# TODO: and user.is_authenticated #}
-									<a href="{% url 'reputation' post.user.username %}?action=plus&amp;post_id={{ post.id }}"><img src="{{ STATIC_URL }}djangobb_forum/img/reputation/warn_add.gif" alt="+" /></a>&nbsp;&nbsp;<strong>{{ post.user.forum_profile.reply_total|default_if_none:"0" }}&nbsp;&nbsp;</strong><a href="{% url 'reputation' post.user.username %}?action=minus&amp;post_id={{ post.id }}"><img src="{{ STATIC_URL }}djangobb_forum/img/reputation/warn_minus.gif" alt="-" /></a>
+									<a href="{% url 'reputation' post.user.username %}?action=plus&amp;post_id={{ post.id }}"><img src="{% static "djangobb_forum/img/reputation/warn_add.gif" %}" alt="+" /></a>&nbsp;&nbsp;<strong>{{ post.user.forum_profile.reply_total|default_if_none:"0" }}&nbsp;&nbsp;</strong><a href="{% url 'reputation' post.user.username %}?action=minus&amp;post_id={{ post.id }}"><img src="{% static "djangobb_forum/img/reputation/warn_minus.gif" %}" alt="-" /></a>
 								{% else %}
 									<strong>{{ post.user.forum_profile.reply_total|default_if_none:"0" }}</strong>
 								{% endif %}
@@ -170,7 +170,7 @@
 			    <li><a href="{% url 'index' %}">{% trans "Root" %} </a></li>
 			    <li>&raquo; {% link topic.forum %} </li>
 			    <li>
-			        &raquo; {{ topic }}<a href="{% url 'forum_topic_feed' topic.id %}"><img src="{{ STATIC_URL }}djangobb_forum/img/feed-icon-small.png" alt="[RSS Feed]" title="[RSS Feed]" class="breadcrumb_rss" /></a>
+			        &raquo; {{ topic }}<a href="{% url 'forum_topic_feed' topic.id %}"><img src="{% static "djangobb_forum/img/feed-icon-small.png" %}" alt="[RSS Feed]" title="[RSS Feed]" class="breadcrumb_rss" /></a>
 			    </li>
             </ul>
 		{% if user.is_authenticated %}
