@@ -2,6 +2,7 @@
 {% load pagination_tags %}
 {% load forum_extras %}
 {% load i18n %}
+{% load staticfiles %}
 
 {% block content %}
 {% autopaginate posts forum_settings.TOPIC_PAGE_SIZE %}
