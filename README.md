@@ -3,12 +3,16 @@ Django-Megaparmeni
 
 Websites for server Megaparmeni.eu
 
-Neededs:
+Needs:
 --------
   * DjangoBB - https://bitbucket.org/slav0nic/djangobb
   * Django Social Auth - https://github.com/omab/django-social-auth
   * python oauth2 - https://github.com/simplegeo/python-oauth2
   * python openid - https://pypi.python.org/pypi/python-openid/
+  * simplejson < 2.1 / no simplejson - more info:
+      
+      - https://github.com/joestump/django-ajax/issues/33
+      - https://github.com/simplejson/simplejson/issues/37
 
 Copyrights and Licence
 ----------------------
