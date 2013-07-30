@@ -3,7 +3,7 @@ Django-Megaparmeni
 
 Websites for server Megaparmeni.eu
 
-Neededs:
+Needs:
 --------
   * DjangoBB - https://bitbucket.org/slav0nic/djangobb
   * Django Social Auth - https://github.com/omab/django-social-auth
