@@ -325,8 +325,7 @@ def show_forum(request, forum_id, full=True):
     if not forum.category.has_access(request.user):
         return HttpResponseForbidden()
     topics = forum.topics.order_by('-sticky', '-updated').select_related()
-    moderator = request.user.is_superuser or\
-        request.user in forum.moderators.all()
+    moderator = request.user.is_superuser or request.user in forum.moderators.all()
     to_return = {'categories': Category.objects.all(),
                 'forum': forum,
                 'posts': forum.post_count,
