@@ -100,7 +100,7 @@
 {% block lofi %}
 {% if forum_settings.LOFI_SUPPORT %}
     <p class="lofi">
-        <a href="{% url lofi_index %}">Lo-Fi Version</a>
+        <a href="{% url 'lofi_index' %}">Lo-Fi Version</a>
     </p>
 {% endif %}
 {% endblock %}
