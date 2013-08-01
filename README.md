@@ -1,8 +1,24 @@
 Django-Megaparmeni
 ==================
 
-Websites for server Megaparmeni.eu
+Websites for server Megaparmeni.eu. This site will be conecting our game servers and website.
 
+Features:
+--------
+  * current features
+    - forum
+  * coming soon features
+    - working forum
+    - something like wp, drupal or Joomola
+    - module for iConomy
+    - module for PermissionsEx
+    - module for AuthMe
+    - module for Trinity Core
+    - module for Central Registration
+    - module for Sourcemod (Halflife games)
+    - working login-in and registreting by social sites
+    - central managment of game server and simple admin GUI
+    
 Needs:
 --------
   * DjangoBB - https://bitbucket.org/slav0nic/djangobb
