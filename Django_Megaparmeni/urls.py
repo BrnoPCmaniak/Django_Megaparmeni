@@ -16,4 +16,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('social_auth.urls')),
     url(r'^forum/', include('djangobb_forum.urls')),
+    url(r'^account/', include('django_authopenid.urls')),
 )
