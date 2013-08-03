@@ -29,6 +29,9 @@ Needs:
       
       - https://github.com/joestump/django-ajax/issues/33
       - https://github.com/simplejson/simplejson/issues/37
+  * django-authopenid 1.0.2 - more info:
+      - https://bitbucket.org/benoitc/django-authopenid/pull-request/2/tweaks-to-work-with-django-15/diff
+      - http://djangobb.org/ticket/246
 
 Copyrights and Licence
 ----------------------
