@@ -12,3 +12,5 @@ python-openid
 django-social-auth
 django-mailer
 Whoosh
+django-registration
+django-authopenid>=1.0.2

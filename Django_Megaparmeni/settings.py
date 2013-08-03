@@ -101,6 +101,7 @@ MIDDLEWARE_CLASSES = (
     'pagination.middleware.PaginationMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_authopenid.middleware.OpenIDMiddleware',
 )
 
 ROOT_URLCONF = 'Django_Megaparmeni.urls'
@@ -129,6 +130,8 @@ INSTALLED_APPS = (
     'djangobb_forum',
     'haystack',
     'pagination',
+    'registration',
+    'django_authopenid',
 )
 
 AUTHENTICATION_BACKENDS = (
@@ -200,4 +203,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
     "djangobb_forum.context_processors.forum_settings",
+    'django_authopenid.context_processors.authopenid',
 )
